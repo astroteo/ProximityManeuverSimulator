@@ -1,0 +1,2 @@
+set(robosat_gazebo_ros_plugins_msgs_MESSAGE_FILES "msg/ProximityDynamicObjectModel.msg")
+set(robosat_gazebo_ros_plugins_msgs_SERVICE_FILES "srv/GetModelProperties.srv")

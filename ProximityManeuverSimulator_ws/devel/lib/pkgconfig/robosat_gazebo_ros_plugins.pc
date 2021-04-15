@@ -1,0 +1,8 @@
+prefix=/home/teobaiguera/Documents/ProximityManeuverSimulator/ProximityManeuverSimulator_ws/devel
+
+Name: robosat_gazebo_ros_plugins
+Description: Description of robosat_gazebo_ros_plugins
+Version: 0.6.13
+Cflags: -I/home/teobaiguera/Documents/ProximityManeuverSimulator/ProximityManeuverSimulator_ws/src/robosat_gazebo_plugins/robosat_gazebo_ros_plugins/include
+Libs: -L${prefix}/lib -lrobosat_object_ros_plugin
+Requires: robosat_gazebo_plugins sensor_msgs geometry_msgs std_msgs visualization_msgs

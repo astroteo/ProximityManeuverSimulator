@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<sdf version ='1.4'>
+  <model name ='sphere'>
+    <link name ='link'>
+      <pose>0 0 0 0 0 0</pose>
+      <collision name ='collision'>
+        <geometry>
+          <sphere><radius>20</radius></sphere>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <geometry>
+          <sphere><radius>20</radius></sphere>
+        </geometry>
+      </visual>
+    </link>
+    <!---
+    <plugin name="cholessy_wiltshire_object" filename="libcholessy_wiltshire_object.dylib"/>
+    -->
+  </model>
+</sdf>

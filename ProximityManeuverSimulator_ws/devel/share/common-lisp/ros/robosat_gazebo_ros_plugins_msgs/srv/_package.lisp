@@ -1,0 +1,10 @@
+(cl:defpackage robosat_gazebo_ros_plugins_msgs-srv
+  (:use )
+  (:export
+   "GETMODELPROPERTIES"
+   "<GETMODELPROPERTIES-REQUEST>"
+   "GETMODELPROPERTIES-REQUEST"
+   "<GETMODELPROPERTIES-RESPONSE>"
+   "GETMODELPROPERTIES-RESPONSE"
+  ))
+

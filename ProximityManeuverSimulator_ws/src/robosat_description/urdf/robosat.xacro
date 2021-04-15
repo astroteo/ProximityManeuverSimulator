@@ -1,0 +1,79 @@
+<?xml version='1.0'  ?>
+
+<robot name="robosat" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:property name="namespace" value="robosat"/>
+
+  <xacro:property name="PI" value="3.1415926535897931"/>
+
+  <xacro:property name="robosatCubeSize" value="0.5"/>
+  <xacro:property name="robosatMass" value="5"/>
+    
+
+  <xacro:property name="cameraSize" value="0.2"/>
+  <xacro:property name="cameraMass" value="0.1"/>
+
+  <xacro:include filename="$(find robosat_description)/urdf/robosat.gazebo" />
+  <xacro:include filename="$(find robosat_description)/urdf/materials.xacro" />
+  <xacro:include filename="$(find robosat_description)/urdf/macros.xacro" />
+ 
+
+
+  <link name="base_link">
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <box size="${robosatCubeSize} ${robosatCubeSize} ${robosatCubeSize}"/>
+    </geometry>
+  </collision>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <box size="${robosatCubeSize} ${robosatCubeSize} ${robosatCubeSize}"/>
+    </geometry>
+    <!-- <material name="orange"/> -->
+  </visual>
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="${robosatMass}"/>
+    <box_inertia m="${robosatMass}" x="${robosatCubeSize}" y="${robosatCubeSize}" z="${robosatCubeSize}"/>
+  </inertial>
+</link>
+
+<!-- Camera 
+<link name="camera">
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0 "/>
+    <geometry>
+      <box size="${cameraSize} ${cameraSize} ${cameraSize}"/>
+    </geometry>
+  </collision>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <box size="${cameraSize} ${cameraSize} ${cameraSize}"/>
+    </geometry>
+    <material name="blue"/>
+  </visual>
+  <inertial>
+    <mass value="${cameraMass}" />
+    <origin xyz="0 0 0" rpy="0 0 0 "/>
+    <box_inertia m="${cameraMass}" x="${cameraSize}" y="${cameraSize}" z="${cameraSize}" />
+  </inertial>
+</link>
+
+  <joint name="camera_joint" type="fixed">
+    <origin xyz="0 0 ${robosatCubeSize}" rpy="0 0 0 "/>
+    <parent link="main_body"/>
+    <child link="camera"/>
+  </joint>
+-->
+<!--- Add Cholessy-Wiltshire Physics plugin -->
+
+<gazebo>
+  <!--
+  <plugin name="cholessy_wiltshire_physic" filename="librobosat_gazebo_plugin.so"/>
+-->
+<plugin name="cholessy_wiltshire_physic" filename="libproximity_object_ros_plugin.so"/>
+</gazebo>
+</robot>

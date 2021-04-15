@@ -1,0 +1,4 @@
+# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
+
+set(robosat_gazebo_ros_plugins_msgs_MSG_INCLUDE_DIRS "/home/teobaiguera/Documents/ProximityManeuverSimulator/ProximityManeuverSimulator_ws/src/robosat_gazebo_plugins/robosat_gazebo_ros_plugins_msgs/msg")
+set(robosat_gazebo_ros_plugins_msgs_MSG_DEPENDENCIES std_msgs;geometry_msgs)

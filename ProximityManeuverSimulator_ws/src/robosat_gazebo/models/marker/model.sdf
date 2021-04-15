@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<sdf version ='1.4'>
+  <model name ='sphere'>
+    <link name ='link'>
+      <pose>0 0 0 0 0 0</pose>
+      <!--
+      <collision name ='collision'>
+        <geometry>
+          <sphere><radius>.0</radius></sphere>
+        </geometry>
+      </collision>
+    -->
+      <visual name='visual'>
+        <geometry>
+          <sphere><radius>.1</radius></sphere>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+      </material>
+      </visual>
+    </link>
+    <!-- Add the plugin in a neutral Physics to leave markers immutated -->
+    <plugin name="cholessy_wiltshire_world" filename="libcholessy_wiltshire.so"/>
+  </model>
+</sdf>

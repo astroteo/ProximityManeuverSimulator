@@ -1,0 +1,8 @@
+prefix=/home/teobaiguera/Documents/ProximityManeuverSimulator/ProximityManeuverSimulator_ws/devel
+
+Name: robosat_gazebo
+Description: Description of robosat_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

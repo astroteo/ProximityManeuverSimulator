@@ -1,0 +1,2 @@
+set(robosat_gazebo_ros_plugins_msgs_MESSAGE_FILES "/home/teobaiguera/Documents/ProximityManeuverSimulator/ProximityManeuverSimulator_ws/src/robosat_gazebo_plugins/robosat_gazebo_ros_plugins_msgs/msg/ProximityDynamicObjectModel.msg")
+set(robosat_gazebo_ros_plugins_msgs_SERVICE_FILES "/home/teobaiguera/Documents/ProximityManeuverSimulator/ProximityManeuverSimulator_ws/src/robosat_gazebo_plugins/robosat_gazebo_ros_plugins_msgs/srv/GetModelProperties.srv")
